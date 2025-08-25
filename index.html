@@ -9,77 +9,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: black;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
       color: orange;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .hero {
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      animation: slideIn 2s ease-in-out;
-    }
-
-    p {
-      font-size: 1.5em;
-      margin-bottom: 1.5em;
-      animation: slideIn 2s ease-in-out 0.5s;
-    }
-
-    button {
-      padding: 12px 25px;
-      font-size: 1em;
-      color: black;
-      background-color: orange;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      animation: pulse 2s infinite;
-    }
-
-    button:hover {
-      background-color: darkorange;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideIn {
-      from { transform: translateY(50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-  </style>
-</head>
-<body>
-  <div class="hero">
-    <h1>Hello Visitor</h1>
-    <p>Welcome to my page.<br>My name is Wayne and it's nice having you here.</p>
-    <button onclick="connect()">Let's Connect</button>
-  </div>
-
-  <script>
-    function connect() {
-      alert("Thanks for reaching out! Let's connect soon.");
-      // You can replace the alert with a redirect or contact form in future.
-    }
-  </script>
-</body>
-</html>
